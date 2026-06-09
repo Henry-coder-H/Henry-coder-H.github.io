@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="个人学术主页" />
+  <title>Your Name | Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 顶部导航：href 对应下面每个 section 的 id -->
+  <header class="topbar">
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#internships">Internships</a>
+      <a href="#awards">Awards</a>
+      <a href="#services">Services</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- 个人简介区域 -->
+    <section class="hero" id="about">
+      <div class="portrait-wrap">
+        <!-- 替换头像：把你的照片放到 assets/profile.jpg，然后把 src 改为 assets/profile.jpg -->
+        <img class="portrait" src="assets/profile-placeholder.svg" alt="profile photo" />
+      </div>
+
+      <div class="intro">
+        <h1>Your Name</h1>
+        <p class="subtitle">Student / Researcher / Engineer at Your University</p>
+
+        <p>
+          <!-- 在这里写第一段个人简介，例如：I am a student at ... My research interests include ... -->
+        </p>
+
+        <p>
+          <!-- 在这里写第二段个人简介，例如：I am especially interested in ... -->
+        </p>
+
+        <div class="icon-links">
+          <!-- 邮箱：把 your.email@example.com 改成你的邮箱 -->
+          <a href="mailto:your.email@example.com" title="Email" aria-label="Email">✉</a>
+          <!-- GitHub：把链接改成你的 GitHub 主页 -->
+          <a href="https://github.com/your-github-username" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">GitHub</a>
+          <!-- Google Scholar：没有就可以删除这一行 -->
+          <a href="#" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">Scholar</a>
+          <!-- 微信/个人二维码：可以把二维码图片放在 assets/wechat.jpg，然后链接到它 -->
+          <a href="#" title="WeChat" aria-label="WeChat">WeChat</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 近期动态 -->
+    <section class="section" id="news">
+      <h2>News</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-year">2026</div>
+          <div class="news-text"><!-- 写近期动态，例如：One paper accepted to ... --></div>
+        </div>
+        <div class="news-item">
+          <div class="news-year">2026</div>
+          <div class="news-text"><!-- 写近期动态 --></div>
+        </div>
+        <div class="news-item">
+          <div class="news-year">2025</div>
+          <div class="news-text"><!-- 写近期动态 --></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 论文与成果 -->
+    <section class="section" id="publications">
+      <h2>Selected Publications</h2>
+      <p class="note">(* denotes equal contribution)</p>
+
+      <div class="pub-category">
+        <h3>Research Topic / Direction 1</h3>
+        <article class="pub-item">
+          <!-- 论文图片：把图片放到 assets/paper-1.jpg，然后改 src -->
+          <img src="assets/paper-placeholder.svg" alt="publication thumbnail" />
+          <div class="pub-info">
+            <h4>Paper Title</h4>
+            <p class="authors"><strong>Your Name</strong>, Co-author A, Co-author B</p>
+            <p class="venue">Conference / Journal, Year</p>
+            <p class="pub-links">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+              <a href="#">Project</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <img src="assets/paper-placeholder.svg" alt="publication thumbnail" />
+          <div class="pub-info">
+            <h4>Paper Title</h4>
+            <p class="authors"><strong>Your Name</strong>, Co-author A</p>
+            <p class="venue">Conference / Journal, Year</p>
+            <p class="pub-links">
+              <a href="#">PDF</a>
+              <a href="#">BibTeX</a>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="pub-category">
+        <h3>Research Topic / Direction 2</h3>
+        <article class="pub-item">
+          <img src="assets/paper-placeholder.svg" alt="publication thumbnail" />
+          <div class="pub-info">
+            <h4>Paper Title</h4>
+            <p class="authors"><strong>Your Name</strong>, Co-author A, Co-author B</p>
+            <p class="venue">Conference / Journal, Year</p>
+            <p class="pub-links">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 预印本/技术报告，可按需删除 -->
+    <section class="section" id="preprints">
+      <h2>Selected Preprints</h2>
+      <article class="pub-item">
+        <img src="assets/paper-placeholder.svg" alt="preprint thumbnail" />
+        <div class="pub-info">
+          <h4>Preprint or Technical Report Title</h4>
+          <p class="authors"><strong>Your Name</strong></p>
+          <p class="venue">Under Review / Technical Report</p>
+          <p class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 实习经历：这是新增部分，可以插入实习机构图片/logo/项目图 -->
+    <section class="section" id="internships">
+      <h2>Internship Experience</h2>
+
+      <article class="intern-item">
+        <!-- 实习机构 logo 或实习相关图片：把图片放入 assets/company-1.png，然后改 src -->
+        <img class="intern-logo" src="assets/intern-placeholder.svg" alt="institution logo" />
+        <div class="intern-info">
+          <h3>Institution / Company Name</h3>
+          <p class="intern-meta">Research Intern / Algorithm Intern / Engineering Intern · YYYY.MM – YYYY.MM</p>
+          <p>
+            <!-- 简要描述实习内容：负责什么方向、做了什么工作、产出了什么结果。 -->
+          </p>
+          <ul>
+            <li><!-- 工作内容 1，例如：Designed and implemented ... --></li>
+            <li><!-- 工作内容 2，例如：Built experiments and evaluation pipeline ... --></li>
+            <li><!-- 工作内容 3，例如：Collaborated with ... --></li>
+          </ul>
+
+          <!-- 实习项目展示图，可选：没有图片可以删除整个 div -->
+          <div class="intern-gallery">
+            <img src="assets/institution-placeholder.svg" alt="internship project image 1" />
+            <img src="assets/institution-placeholder.svg" alt="internship project image 2" />
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 荣誉奖项 -->
+    <section class="section" id="awards">
+      <h2>Honors &amp; Awards</h2>
+      <div class="award-list">
+        <div class="award-item"><span>2026</span><p><!-- Award / Scholarship / Competition --></p></div>
+        <div class="award-item"><span>2025</span><p><!-- Award / Scholarship / Competition --></p></div>
+        <div class="award-item"><span>2024</span><p><!-- Award / Scholarship / Competition --></p></div>
+      </div>
+    </section>
+
+    <!-- 学术服务/审稿/学生工作等 -->
+    <section class="section" id="services">
+      <h2>Academic Services</h2>
+      <p><strong>Reviewer for:</strong></p>
+      <ul class="service-list">
+        <li><!-- Journal: ... --></li>
+        <li><!-- Conference: ... --></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name. Powered by GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

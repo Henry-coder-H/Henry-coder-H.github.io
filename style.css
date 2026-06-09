@@ -1,0 +1,343 @@
+/* 整体风格：接近经典学术主页，白底、窄版心、Times 字体 */
+:root {
+  --text: #111111;
+  --muted: #666666;
+  --line: #dddddd;
+  --accent: #ff6a21;
+  --bg: #ffffff;
+  --card: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: "Times New Roman", Times, "Songti SC", SimSun, serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 13px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  font-size: 17px;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 38px 20px 30px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 52px;
+}
+
+.portrait-wrap {
+  padding-top: 6px;
+}
+
+.portrait {
+  width: 250px;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  background: #f2f2f2;
+}
+
+.intro h1 {
+  margin: 0 0 4px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 19px;
+}
+
+.intro p {
+  margin: 0 0 18px;
+}
+
+.icon-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+.icon-links a:first-child {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.section {
+  margin: 58px 0;
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+}
+
+.note {
+  margin-top: -14px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.news-list {
+  margin-top: 22px;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  gap: 35px;
+  margin: 14px 0;
+}
+
+.news-year {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.news-text {
+  min-height: 1.5em;
+}
+
+.pub-category {
+  margin-top: 52px;
+}
+
+.pub-category h3 {
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--line);
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.pub-item {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 28px;
+  align-items: start;
+  margin: 26px 0;
+}
+
+.pub-item img {
+  width: 190px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+  background: #f4f4f4;
+}
+
+.pub-info h4 {
+  margin: 0 0 4px;
+  font-size: 21px;
+  line-height: 1.22;
+}
+
+.authors {
+  margin: 2px 0;
+  color: #777777;
+  font-size: 16px;
+}
+
+.venue {
+  margin: 3px 0;
+  font-style: italic;
+}
+
+.pub-links {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.pub-links a {
+  margin-right: 12px;
+  color: var(--accent);
+}
+
+.intern-item {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 34px;
+  align-items: start;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.intern-logo {
+  width: 170px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 14px;
+}
+
+.intern-info h3 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.intern-meta {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.intern-info ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+}
+
+.intern-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.intern-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  background: #f7f7f7;
+}
+
+.award-list {
+  margin-top: 20px;
+}
+
+.award-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  margin: 10px 0;
+}
+
+.award-item span {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.award-item p {
+  margin: 0;
+}
+
+.service-list {
+  margin-top: 10px;
+}
+
+.service-list li::marker {
+  color: var(--accent);
+}
+
+.footer {
+  max-width: 920px;
+  margin: 30px auto 0;
+  padding: 26px 20px 42px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 15px;
+  }
+
+  .container {
+    padding-top: 24px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portrait {
+    width: 210px;
+    height: 270px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .pub-item,
+  .intern-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .pub-item img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .intern-logo {
+    width: 180px;
+  }
+
+  .news-item,
+  .award-item {
+    grid-template-columns: 70px 1fr;
+    gap: 16px;
+  }
+}

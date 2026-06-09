@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#f6f6f6"/>
+  <rect x="35" y="40" width="330" height="130" rx="8" fill="#dfdfdf"/>
+  <path d="M55 145l70-65 55 52 38-32 92 86H55z" fill="#cfcfcf"/>
+  <circle cx="306" cy="74" r="18" fill="#c8c8c8"/>
+  <text x="200" y="212" text-anchor="middle" font-family="Times New Roman" font-size="22" fill="#777">Internship Project Image</text>
+</svg>

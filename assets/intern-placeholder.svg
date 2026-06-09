@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="220" viewBox="0 0 340 220">
+  <rect width="340" height="220" fill="#fafafa"/>
+  <rect x="52" y="52" width="236" height="96" rx="10" fill="#e2e2e2"/>
+  <text x="170" y="105" text-anchor="middle" font-family="Times New Roman" font-size="28" font-weight="bold" fill="#777">LOGO</text>
+  <text x="170" y="184" text-anchor="middle" font-family="Times New Roman" font-size="22" fill="#777">Institution Image</text>
+</svg>
