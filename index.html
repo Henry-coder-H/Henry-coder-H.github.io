@@ -7,13 +7,15 @@
   <title>Siyu Huang | Homepage</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- 顶部导航：href 对应下面每个 section 的 id -->
   <header class="topbar">
     <nav class="nav">
-      <a href="#about">关于</a>
+      <a href="#about">About</a>
       <a href="#news">News</a>
       <a href="#publications">Publications</a>
+      <a href="#preprints">Preprints</a>
       <a href="#internships">Internships</a>
       <a href="#awards">Awards</a>
       <a href="#services">Services</a>
@@ -22,9 +24,8 @@
 
   <main class="container">
     <!-- 个人简介区域 -->
-    <secti于 class="hero" id="about">
+    <section class="hero" id="about">
       <div class="portrait-wrap">
-        <!-- 替换头像：把你的照片放到 assets/profile.jpg，然后把 src 改为 assets/profile.jpg -->
         <img class="portrait" src="assets/me.jpg" alt="profile photo" />
       </div>
 
@@ -33,34 +34,44 @@
         <p class="subtitle">Student at Sun Yat-sen University</p>
 
         <p>
-          I am an undergraduate student at Sun Yat-sen University, majoring in Intelligent Science and Technology. My research focuses on generative models and multimodal learning. I am especially interested in image and video generation.
+          I am a third-year undergraduate student at <strong>Sun Yat-sen University</strong>, majoring in
+          <strong>Intelligent Science and Technology</strong>. I am currently advised by
+          <strong>Prof. Chenqiang Gao</strong>. My research interests mainly focus on
+          <strong>generative models</strong> and <strong>multimodal learning</strong>, with a particular emphasis on
+          <strong>image and video generation</strong>.
         </p>
 
         <p>
-          I am especially interested in long video generation and hope to explore more
+          I am particularly interested in <strong>long video generation</strong> and hope to explore this direction
+          more deeply during my Ph.D. studies. My long-term goal is to develop meaningful and practical AI methods
+          that can contribute to real-world industrial applications.
         </p>
 
         <div class="icon-links">
-          <!-- 邮箱：把 your.email@example.com 改成你的邮箱 -->
           <a href="mailto:huangsy223@mail2.sysu.edu.cn" title="Email" aria-label="Email">✉</a>
-          <!-- GitHub：把链接改成你的 GitHub 主页 -->
           <a href="https://github.com/Henry-coder-H" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">GitHub</a>
-          <!-- Google Scholar：没有就可以删除这一行 -->
           <a href="#" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">Scholar</a>
-          <!-- 微信/个人二维码：可以把二维码图片放在 assets/wechat.jpg，然后链接到它 -->
           <a href="#" title="WeChat" aria-label="WeChat">WeChat</a>
         </div>
       </div>
-    </secti于>
+    </section>
 
     <!-- 近期动态 -->
-    <secti于 class="section" id="news">
+    <section class="section" id="news">
       <h2>News</h2>
+
       <div class="news-list">
         <div class="news-item">
           <div class="news-year">2026</div>
           <div class="news-text" style="color: #d32f2f; font-weight: 600;">
             I am actively seeking Ph.D. opportunities for Fall 2027 admission.
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-year">2026</div>
+          <div class="news-text">
+            Personal homepage is online.
           </div>
         </div>
       </div>
@@ -73,12 +84,12 @@
 
       <div class="pub-category">
         <h3>Research Topic / Direction 1</h3>
+
         <article class="pub-item">
-          <!-- 论文图片：把图片放到 assets/paper-1.jpg，然后改 src -->
           <img src="assets/paper-placeholder.svg" alt="publication thumbnail" />
           <div class="pub-info">
             <h4>Paper Title</h4>
-            <p class="authors"><strong>Your Name</strong>, Co-author A, Co-author B</p>
+            <p class="authors"><strong>Siyu Huang</strong>, Co-author A, Co-author B</p>
             <p class="venue">Conference / Journal, Year</p>
             <p class="pub-links">
               <a href="#">Paper</a>
@@ -92,7 +103,7 @@
           <img src="assets/paper-placeholder.svg" alt="publication thumbnail" />
           <div class="pub-info">
             <h4>Paper Title</h4>
-            <p class="authors"><strong>Your Name</strong>, Co-author A</p>
+            <p class="authors"><strong>Siyu Huang</strong>, Co-author A</p>
             <p class="venue">Conference / Journal, Year</p>
             <p class="pub-links">
               <a href="#">PDF</a>
@@ -104,11 +115,12 @@
 
       <div class="pub-category">
         <h3>Research Topic / Direction 2</h3>
+
         <article class="pub-item">
           <img src="assets/paper-placeholder.svg" alt="publication thumbnail" />
           <div class="pub-info">
             <h4>Paper Title</h4>
-            <p class="authors"><strong>Your Name</strong>, Co-author A, Co-author B</p>
+            <p class="authors"><strong>Siyu Huang</strong>, Co-author A, Co-author B</p>
             <p class="venue">Conference / Journal, Year</p>
             <p class="pub-links">
               <a href="#">Paper</a>
@@ -119,14 +131,15 @@
       </div>
     </section>
 
-    <!-- 预印本/技术报告，可按需删除 -->
+    <!-- 预印本/技术报告 -->
     <section class="section" id="preprints">
       <h2>Selected Preprints</h2>
+
       <article class="pub-item">
         <img src="assets/paper-placeholder.svg" alt="preprint thumbnail" />
         <div class="pub-info">
           <h4>Preprint or Technical Report Title</h4>
-          <p class="authors"><strong>Your Name</strong></p>
+          <p class="authors"><strong>Siyu Huang</strong></p>
           <p class="venue">Under Review / Technical Report</p>
           <p class="pub-links">
             <a href="#">PDF</a>
@@ -136,31 +149,30 @@
       </article>
     </section>
 
-    <!-- 实习经历：这是新增部分，可以插入实习机构图片/logo/项目图 -->
+    <!-- 实习经历 -->
     <section class="section" id="internships">
       <h2>Internship Experience</h2>
 
       <article class="intern-item">
-        <!-- 实习机构 logo 或实习相关图片：把图片放入 assets/company-1.png，然后改 src -->
-        <img class="intern-logo" src="assets/hcp_logo.jpg" alt="institution logo" />
-        <div class="intern-info">
-          <h3>Human Cyber Physical Intelligence Integration Lab(HCP Lab)</h3>
-          <p class="intern-meta">Research Intern · 2025.7 – now</p>
-          <p>
-            <Manuscript in preparation for ICLR 2026>
-          </p>
-          <ul>
-            <li>Proposed a novel diffusion-based continuous image super-resolution framework by physically modeling the
-camera imaging process.</li>
-            <li>Formulated the super-resolution forward process by integrating the Navier-Stokes heat transfer equations to
-ensure continuous and physics-grounded magnification.</li>
-            <li>Manuscript in preparation for ICLR 2026</li>
-          </ul>
+        <img class="intern-logo" src="assets/hcp_logo.jpg" alt="HCP Lab logo" />
 
-          <!-- 实习项目展示图，可选：没有图片可以删除整个 div -->
-          <div class="intern-gallery">
-            <img src="assets/institution-placeholder.svg" alt="internship project image 1" />
-          </div>
+        <div class="intern-info">
+          <h3>Human Cyber Physical Intelligence Integration Lab (HCP Lab)</h3>
+          <p class="intern-meta">Research Intern · 2025.07 – Present</p>
+
+          <ul>
+            <li>
+              Proposed a novel diffusion-based continuous image super-resolution framework by physically modeling the
+              camera imaging process.
+            </li>
+            <li>
+              Formulated the super-resolution forward process by integrating the Navier-Stokes heat transfer equations
+              to ensure continuous and physics-grounded magnification.
+            </li>
+            <li>
+              Manuscript in preparation for ICLR 2026.
+            </li>
+          </ul>
         </div>
       </article>
     </section>
@@ -168,28 +180,48 @@ ensure continuous and physics-grounded magnification.</li>
     <!-- 荣誉奖项 -->
     <section class="section" id="awards">
       <h2>Honors &amp; Awards</h2>
+
       <div class="award-list">
-        <div class="award-item"><span>2026</span><p>Huawei Scholarship</p></div>
-        <div class="award-item"><span>2025</span><p>Sun Yat-sen University Outstanding Student Scholarship First Prize</p></div>
-        <div class="award-item"><span>2025</span><p>2024-2025 Undergraduate National Scholarship</p></div>
-        <div class="award-item"><span>2024</span><p>Sun Yat-sen University Outstanding Student Scholarship First Prize</p></div>
-        <div class="award-item"><span>2024</span><p>2023-2024 Undergraduate National Scholarship</p></div>
+        <div class="award-item">
+          <span>2026</span>
+          <p>Huawei Scholarship</p>
+        </div>
+
+        <div class="award-item">
+          <span>2025</span>
+          <p>Sun Yat-sen University Outstanding Student Scholarship First Prize</p>
+        </div>
+
+        <div class="award-item">
+          <span>2025</span>
+          <p>2024-2025 Undergraduate National Scholarship</p>
+        </div>
+
+        <div class="award-item">
+          <span>2024</span>
+          <p>Sun Yat-sen University Outstanding Student Scholarship First Prize</p>
+        </div>
+
+        <div class="award-item">
+          <span>2024</span>
+          <p>2023-2024 Undergraduate National Scholarship</p>
+        </div>
       </div>
     </section>
 
     <!-- 学术服务/审稿/学生工作等 -->
     <section class="section" id="services">
       <h2>Academic Services</h2>
+
       <p><strong>Reviewer for:</strong></p>
       <ul class="service-list">
-        <li><!-- Journal: ... --></li>
-        <li><!-- Conference: ... --></li>
+        <li>Coming soon.</li>
       </ul>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Your Name. Powered by GitHub Pages.</p>
+    <p>© <span id="year"></span> Siyu Huang. Powered by GitHub Pages.</p>
   </footer>
 
   <script src="script.js"></script>
